@@ -38,10 +38,16 @@ void removeFrontEnd(QUEUE *q)
     if (q->rear == -1 || q->front > q->rear)
     {
         printf("Queue is underflow\n");
+        return; 
     }
-    else {
      printf("first item in queue is %s\n",q->items[( q->front)++]);
+    // reset the queue to make usable 
+    if(q->front > q->rear)
+    {
+        q->front =0; 
+        q->rear = -1; 
     }
+    
 }
 
 void displayQueueContents(QUEUE *q)
