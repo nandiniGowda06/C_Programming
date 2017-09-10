@@ -92,7 +92,7 @@ int main(int argc, const char * argv[]) {
     q.front = 0;
     q.rear = -1;
     
-    printf("Below are the operations for simple Queue\n");
+    printf("Below are the operations for double ended Queue\n");
     printf("1.Insert from front end to queue\n");
     printf("2.Insert from rear end to queue\n");
     printf("3.Remove from front end of queue\n");
