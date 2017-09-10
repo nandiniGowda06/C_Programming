@@ -8,16 +8,13 @@
 
 #include <stdio.h>
 #define QUEUE_SIZE 2
-
+// simple QUEUE
 struct queue{
     
     int front;
     int rear;
     char items[QUEUE_SIZE][10];
 };
-
-// simple QUEUE
-
 #define QUEUE struct queue
 
 void insertRearEnd( QUEUE * q)
@@ -46,12 +43,16 @@ void removeFrontEnd(QUEUE *q)
     {
         q->front =0; 
         q->rear = -1; 
-    }
-    
+    }    
 }
 
 void displayQueueContents(QUEUE *q)
 {
+   if (q->rear == -1)
+   {
+     printf("Queue is empty\n");
+     return; 
+   }
     for (int i = q->front; i <= q->rear; i++) {
         printf("%s\n",q->items[i]);
     }
