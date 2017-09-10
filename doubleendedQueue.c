@@ -2,7 +2,7 @@
 //  main.c
 //  DatastructureQueue
 //
-//  Created by avinash on 9/9/17.
+//  Created by nandini on 9/9/17.
 //  Copyright © 2017 abc. All rights reserved.
 //
 
